@@ -1,0 +1,702 @@
+[
+  {
+    "id": "5c755ff9af458fde27863223",
+    "isActive": true,
+    "points": 52,
+    "name": "Oneal Sims",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9d107d51a8c59a816",
+    "isActive": false,
+    "points": 59,
+    "name": "Maddox Craig",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff916257a510268b41a",
+    "isActive": false,
+    "points": 74,
+    "name": "Santiago Gross",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9fe54cd6cb2f6f242",
+    "isActive": true,
+    "points": 69,
+    "name": "Shannon Walter",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9e51820789ff67f4e",
+    "isActive": true,
+    "points": 35,
+    "name": "Brittney Guthrie",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9d18102c8bd56adec",
+    "isActive": true,
+    "points": 53,
+    "name": "Rich Mendez",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff92d3b4c2b92fc8be0",
+    "isActive": false,
+    "points": 63,
+    "name": "Willa Gates",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9d587086d37843b0f",
+    "isActive": true,
+    "points": 43,
+    "name": "Keith Baldwin",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff90eac67cba98a8e61",
+    "isActive": false,
+    "points": 33,
+    "name": "Rosella Byers",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9052432924b8fa9b6",
+    "isActive": false,
+    "points": 73,
+    "name": "Debra Lambert",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9ab02a90e74e465ca",
+    "isActive": false,
+    "points": 90,
+    "name": "Gibson Wheeler",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff92f2933ace8371a70",
+    "isActive": false,
+    "points": 62,
+    "name": "Irene Fitzpatrick",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9c2c530401bab0294",
+    "isActive": true,
+    "points": 87,
+    "name": "Diaz Fuller",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9e4e552e8fa073872",
+    "isActive": false,
+    "points": 87,
+    "name": "Isabelle Finch",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff960dc8e7d7b78e7c1",
+    "isActive": false,
+    "points": 82,
+    "name": "Shirley Mcmahon",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff94e743fab8f78c136",
+    "isActive": false,
+    "points": 10,
+    "name": "Adriana Munoz",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9708ee0375d789876",
+    "isActive": true,
+    "points": 64,
+    "name": "Bradshaw Brady",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9feb87858f8bf9077",
+    "isActive": false,
+    "points": 87,
+    "name": "Stevenson Kane",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9cf06f5857e4286eb",
+    "isActive": true,
+    "points": 50,
+    "name": "Pam Rosales",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9cfc730231d2d82ed",
+    "isActive": true,
+    "points": 26,
+    "name": "Marisol Rose",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9ff85b524100d827b",
+    "isActive": false,
+    "points": 61,
+    "name": "Dickerson Mccarty",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9a3d2bad19b26fe9e",
+    "isActive": true,
+    "points": 69,
+    "name": "Knight Faulkner",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff982381cd156175e66",
+    "isActive": false,
+    "points": 61,
+    "name": "Paige Knox",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9a7cbb8f42084a520",
+    "isActive": false,
+    "points": 95,
+    "name": "Reyes Delaney",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9090ba27aa98af307",
+    "isActive": false,
+    "points": 77,
+    "name": "Erickson Hartman",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff98866012808f2a2f5",
+    "isActive": true,
+    "points": 81,
+    "name": "Candy Castillo",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff986725bef5232a8d4",
+    "isActive": true,
+    "points": 99,
+    "name": "Rhodes Bartlett",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9ab398401fb95b8fe",
+    "isActive": true,
+    "points": 71,
+    "name": "Leila Oconnor",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff91653a67fcc5edaf1",
+    "isActive": false,
+    "points": 4,
+    "name": "Glenda Levine",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9d11873e7cfab814e",
+    "isActive": true,
+    "points": 14,
+    "name": "Potter Mullins",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff96de8c47dfedfdd5a",
+    "isActive": false,
+    "points": 10,
+    "name": "Frances Reyes",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9b13422e46b7e9a8a",
+    "isActive": false,
+    "points": 41,
+    "name": "Blevins Serrano",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff942588566e3969619",
+    "isActive": false,
+    "points": 12,
+    "name": "Dee Bray",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff96b8c1e04cb3a60ce",
+    "isActive": false,
+    "points": 0,
+    "name": "Magdalena Guerrero",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff967a72b4391d81455",
+    "isActive": true,
+    "points": 60,
+    "name": "Simmons Curry",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff94093e7a5a0e89b20",
+    "isActive": false,
+    "points": 97,
+    "name": "Penny Bernard",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9b352d9ae1b135476",
+    "isActive": false,
+    "points": 6,
+    "name": "Alfreda Cervantes",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9752a8714192409ba",
+    "isActive": false,
+    "points": 41,
+    "name": "Josephine Acevedo",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff925ed439140b90a3e",
+    "isActive": true,
+    "points": 66,
+    "name": "Klein Alford",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff97e6c5b4a8b8e9c9d",
+    "isActive": false,
+    "points": 33,
+    "name": "Crosby Dalton",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff99d526ae80cd9706d",
+    "isActive": true,
+    "points": 42,
+    "name": "Maria Henderson",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff961a82821f0fbce03",
+    "isActive": false,
+    "points": 31,
+    "name": "Key Haynes",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9b697942c5095613c",
+    "isActive": true,
+    "points": 24,
+    "name": "Kent Mckinney",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9aee7a1a8fd239a30",
+    "isActive": false,
+    "points": 23,
+    "name": "Lolita Massey",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff95c6dab0ff8019ae7",
+    "isActive": false,
+    "points": 79,
+    "name": "Mayo Tanner",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff98e4334ab728ee5ef",
+    "isActive": false,
+    "points": 99,
+    "name": "Chapman Rojas",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9acf9d92dad939703",
+    "isActive": true,
+    "points": 91,
+    "name": "Short Baird",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9cef278ef7ba69fec",
+    "isActive": false,
+    "points": 42,
+    "name": "Saunders Fleming",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9fc6a5156335a8053",
+    "isActive": true,
+    "points": 41,
+    "name": "Beasley Giles",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9029f7cb24762f3d0",
+    "isActive": false,
+    "points": 44,
+    "name": "Louisa Collier",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9aeeb2ea74cb25887",
+    "isActive": false,
+    "points": 71,
+    "name": "Hall Blake",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9247e08d3a3aadbf7",
+    "isActive": true,
+    "points": 44,
+    "name": "Vanessa Burgess",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9bf05ad8f6f8b36fa",
+    "isActive": false,
+    "points": 86,
+    "name": "Ratliff Joyner",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff912a6471ff8be1441",
+    "isActive": true,
+    "points": 54,
+    "name": "Banks Boyd",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9ba70e1df6bc38af2",
+    "isActive": true,
+    "points": 12,
+    "name": "Mann Zimmerman",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9174738887fa92aed",
+    "isActive": false,
+    "points": 23,
+    "name": "Dejesus Adams",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9ca91d18b7c8ccb09",
+    "isActive": false,
+    "points": 6,
+    "name": "Cameron Roberts",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9892873930bcc9482",
+    "isActive": true,
+    "points": 96,
+    "name": "Chris Blackburn",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff9157170e25d82307c",
+    "isActive": true,
+    "points": 6,
+    "name": "Church Cross",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff96a887e82166dd867",
+    "isActive": true,
+    "points": 79,
+    "name": "Priscilla Hendricks",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff948eb8eb460af5ca8",
+    "isActive": true,
+    "points": 50,
+    "name": "William Marquez",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff96ad905f4f17ad68f",
+    "isActive": false,
+    "points": 11,
+    "name": "Trudy Powers",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff93e7501f5bffd7a58",
+    "isActive": false,
+    "points": 37,
+    "name": "Martina Delgado",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff99e7002a389138a7a",
+    "isActive": false,
+    "points": 41,
+    "name": "Sondra Gardner",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff902ac9c16d2b91950",
+    "isActive": false,
+    "points": 38,
+    "name": "Berg Allen",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff98289b54a87368c2c",
+    "isActive": false,
+    "points": 50,
+    "name": "Evans Franks",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff900a036d1845c885e",
+    "isActive": false,
+    "points": 57,
+    "name": "Fuller Rodgers",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff95562fa53027ca86d",
+    "isActive": true,
+    "points": 58,
+    "name": "Helena Peters",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9facd631a5151222c",
+    "isActive": false,
+    "points": 36,
+    "name": "Lucas Gray",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff903bb54547b87c0ea",
+    "isActive": true,
+    "points": 19,
+    "name": "Mendoza Martinez",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9e9c01afa51d37518",
+    "isActive": true,
+    "points": 65,
+    "name": "Mccormick Day",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff94904b28498adc24d",
+    "isActive": false,
+    "points": 92,
+    "name": "Lauri Vaughn",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff90de4a47a8b74d7d2",
+    "isActive": false,
+    "points": 97,
+    "name": "Jami Mccarthy",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff94c0450bcddf0bd30",
+    "isActive": true,
+    "points": 21,
+    "name": "Rhonda Gomez",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff925455aa017b9e9a0",
+    "isActive": false,
+    "points": 52,
+    "name": "Carney Sanford",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9fa58560347aaf019",
+    "isActive": false,
+    "points": 71,
+    "name": "Katharine Hogan",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff90b4d183d590edf5e",
+    "isActive": true,
+    "points": 30,
+    "name": "Morse Castro",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff94d6f4c99f91dfabb",
+    "isActive": false,
+    "points": 44,
+    "name": "Fannie Villarreal",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9c1ca9bee820d8c28",
+    "isActive": false,
+    "points": 92,
+    "name": "John Forbes",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff91759780b1ea076fa",
+    "isActive": false,
+    "points": 72,
+    "name": "Castaneda Osborn",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff91446d976cc1929a5",
+    "isActive": true,
+    "points": 80,
+    "name": "Todd Justice",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff967dd8f5c272be66c",
+    "isActive": false,
+    "points": 30,
+    "name": "Mcfarland Lyons",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9294b940d7bc3e5f1",
+    "isActive": true,
+    "points": 1,
+    "name": "Jessica Hanson",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff969f6daf3392197b1",
+    "isActive": false,
+    "points": 75,
+    "name": "Pate Kaufman",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff991f1d8c15f817235",
+    "isActive": false,
+    "points": 83,
+    "name": "Gwen Taylor",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff923c17e682d741533",
+    "isActive": false,
+    "points": 33,
+    "name": "Trevino Hoover",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9a1a034e35cd5eb76",
+    "isActive": true,
+    "points": 32,
+    "name": "Tisha Casey",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9c56615f70d54a47e",
+    "isActive": false,
+    "points": 59,
+    "name": "Shana Vasquez",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff94bbb0e401eea3f89",
+    "isActive": false,
+    "points": 79,
+    "name": "Roseann Wooten",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff99378cf29cfa2fc02",
+    "isActive": false,
+    "points": 58,
+    "name": "Guerra Berger",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff94cd797176766ef2c",
+    "isActive": false,
+    "points": 89,
+    "name": "Tillman Nguyen",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff997b14a7680b21e6a",
+    "isActive": false,
+    "points": 45,
+    "name": "Lillie Clements",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9c5efe8dc43d2995e",
+    "isActive": false,
+    "points": 100,
+    "name": "Vang Dodson",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff9d16a180d5b17c5c5",
+    "isActive": false,
+    "points": 59,
+    "name": "Martin Payne",
+    "team": "red"
+  },
+  {
+    "id": "5c755ff98de24bb1264114d7",
+    "isActive": true,
+    "points": 91,
+    "name": "Randi Wells",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9f97ec142d87d92d0",
+    "isActive": true,
+    "points": 57,
+    "name": "Mccall Rivera",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff943d6b4eb1cc1661d",
+    "isActive": true,
+    "points": 2,
+    "name": "Mcfadden Boyer",
+    "team": "blue"
+  },
+  {
+    "id": "5c755ff9ebdfbcdd1b5f4200",
+    "isActive": true,
+    "points": 75,
+    "name": "Tammi Waters",
+    "team": "green"
+  },
+  {
+    "id": "5c755ff9962bd68a94b4ddac",
+    "isActive": true,
+    "points": 78,
+    "name": "West Potter",
+    "team": "yellow"
+  },
+  {
+    "id": "5c755ff97c84a27350f16404",
+    "isActive": true,
+    "points": 50,
+    "name": "Delgado Graves",
+    "team": "red"
+  }
+]
