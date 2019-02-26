@@ -9,11 +9,11 @@ However, _you_ should come up with the implementation on your own.
 
 We need to manage players, with data consisting of: unique ID, name, team, status, and points.
 For that purpose create a REST API with the following endpoints:
-— `GET /players` — lists all players
-— `POST /players` — creates new player
-— `GET /players/:id` — get a player
-— `DELETE /players/:id` — deletes a player
-— `PUT /players/:id` — update a player
+* `GET /players` — lists all players
+* `POST /players` — creates new player
+* `GET /players/:id` — get a player
+* `DELETE /players/:id` — deletes a player
+* `PUT /players/:id` — update a player
 
 ## Requirements
 
@@ -23,7 +23,7 @@ For that purpose create a REST API with the following endpoints:
 
 * Use `./src/db.json` as a starting list of players — you can continue using `db.json` to store the players for this project, or you can just use it to import the players into a DB of your choice if that works better for you
 
-* Free to use anything for developing and hosting the API (express, Heroku, AWS, Google Cloud etc.) as long as it's JavaScript
+* Free to use anything for developing and hosting the API (express, Heroku, AWS, Google Cloud etc.), anything works as long as it's JavaScript
 
 ## Submitting the project
  * Clone this repo
