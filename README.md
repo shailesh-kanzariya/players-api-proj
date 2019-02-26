@@ -7,7 +7,13 @@ However, _you_ should come up with the implementation on your own.
 
 ## Overview
 
-We need to manage players, with data consisting of: unique ID, name, team, status, and points.
+We need to manage players, with data consisting of:
+* `id` — player's unique ID
+* `name` — player's full name
+* `team` — player's team — one of `red`, `blue`, `green`, or `yellow`
+* `isActive` — player's status, `true` or `false`
+* `points` — player's points [`0` — `100`]
+
 For that purpose create a REST API with the following endpoints:
 * `GET /players` — lists all players
 * `POST /players` — creates new player
@@ -21,11 +27,15 @@ For that purpose create a REST API with the following endpoints:
 
 * Code should run in `Node 8.10`
 
+* Code should be tested (_we use and prefer `jest`, but other testing frameworks will do_)
+
 * Use `./src/db.json` as a starting list of players — you can continue using `db.json` to store the players for this project, or you can just use it to import the players into a DB of your choice if that works better for you
 
 * Free to use anything for developing and hosting the API (express, Heroku, AWS, Google Cloud etc.), anything works as long as it's JavaScript
 
+* _Although not required, bonus points for pagination, sorting, and filtering_
+
 ## Submitting the project
- * Clone this repo
+ * Clone (_not fork_) this repo
  * Implement a working solution
  * Submit the links to your PGA contact
