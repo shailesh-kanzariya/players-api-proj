@@ -23,7 +23,7 @@ For that purpose create a REST API with the following endpoints:
 
 ## Requirements
 
-* Code must be written using `standardjs` convention
+* Code must be written using [`standard`](https://www.npmjs.com/package/standard) style convention
 
 * Code should run in `Node 8.10`
 
