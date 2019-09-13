@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === myEnv) {
 const requiredRequestParamList = ['name', 'team', 'points', 'isActive', 'id']
 
 exports.lambdaHandler = async (event) => {
-  const funcName = 'create-player-lambda'
+  const funcName = 'create-player-lambda: '
   console.log(`${funcName}event = ${JSON.stringify(event)}`)
   try {
     // validate the request has all required request params

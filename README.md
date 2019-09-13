@@ -40,7 +40,11 @@ For that purpose create a REST API with the following endpoints:
  * Implement a working solution
  * Submit the links to your PGA contact
 ## Serverless Functions - Packaging and Deployment
+  * Make sure to have working S3 bucket named `pga.players.db.bucket` which works as player DB
+  * Also ensure to have S3 bucket for sls package upload named as `pga.codetest.sls.package.bucket`
   * Serverless Functions - Packaging Command
     * `sam package --output-template-file packaged.yaml --s3-bucket pga.codetest.sls.package.bucket`
   * Serverless Functions - Deploy Command
     * `sam deploy --template-file packaged.yaml --stack-name pga-codetest-sls-stack --capabilities CAPABILITY_IAM  --region us-east-2`
+## How to test APIs?
+  * Refer `postman-col` folder at project root and it contains postman collection containing all APIs

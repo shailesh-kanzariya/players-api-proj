@@ -4,6 +4,7 @@ const { successCodesJSON } = require('./success-codes')
 const { CError } = require('./CError')
 // constants
 const MODULE_NAME = 'api-response-util: '
+// hard coded response json to send when no one could handle error
 const unhandledErrorJSON = {
   code: 'API_ERR_INTERNAL_SERVER_ERROR',
   httpStatusCode: 500,
@@ -17,12 +18,12 @@ const RESPONSE_HTTTP_HEADERS = {
   'Access-Control-Allow-Origin': '*', // to enable CORS
   'Content-Type': 'application/json'
 }
+// prepare basic error json using received error code
 async function prepareErrorJSON (errorCode, errorData = null) {
   const funcName = String(MODULE_NAME).concat('prepareErrorJSON: ')
   try {
     // validate input params: errorCode
     await validationUtil.validateStringTypeParamList([errorCode])
-    // get MB Error Code JSON for the mbErrorType
     console.log(`${funcName}errorCode = ${errorCode}`)
     const errorCodeJSON = errorCodesJSON[errorCode]
     console.log(`${funcName}errorCodeJSON = ${JSON.stringify(errorCodeJSON)}`)

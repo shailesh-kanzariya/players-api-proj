@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pgahq/recruiting-api-proj.git"
+    "url": "git+https://github.com/shailesh-kanzariya/players-api-proj.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pgahq/recruiting-api-proj/issues"
+    "url": "https://github.com/shailesh-kanzariya/players-api-proj.git"
   },
-  "homepage": "https://github.com/pgahq/recruiting-api-proj#readme",
+  "homepage": "https://github.com/shailesh-kanzariya/players-api-proj.git#readme",
   "devDependencies": {
     "eslint": "^6.3.0",
     "eslint-config-standard": "^14.1.0",

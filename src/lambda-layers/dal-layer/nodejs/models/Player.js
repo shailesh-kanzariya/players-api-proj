@@ -31,6 +31,7 @@ class Player extends Object {
     this.isActive = isActive
   }
 } // class
+
 // Player Model methods
 // create a new player
 async function createNewPlayer (pId, pName, pTeam, pPoints = 0, pIsActive = false) {
