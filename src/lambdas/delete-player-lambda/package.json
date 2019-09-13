@@ -1,0 +1,11 @@
+{
+  "name": "create-player-lambda",
+  "version": "1.0.0",
+  "description": "creates a new player",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shailesh",
+  "license": "ISC"
+}

@@ -1,0 +1,132 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  PGA Code Test
+# global and common configs that apply to all lambdas
+Globals:
+  Function:
+    Timeout: 3 # seconds
+    Runtime: nodejs8.10
+    Handler: app.lambdaHandler # app.js
+
+Resources:
+  # aws utils lambda layer
+  AWSUtilsLambdaLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: AWSUtilsLayer
+      Description: Contains aws utils code used across lambdas
+      ContentUri: src/lambda-layers/aws-utils-layer/
+      CompatibleRuntimes:
+        - nodejs8.10
+      RetentionPolicy: Delete
+  # common code lambda layer
+  CommonCodeLambdaLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: CommonCodeLayer
+      Description: Contains common code used across lambdas
+      ContentUri: src/lambda-layers/common-layer/
+      CompatibleRuntimes:
+        - nodejs8.10
+      RetentionPolicy: Delete
+  # DAL lambda layer
+  DALLambdaLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: DALLambdaLayer
+      Description: Contains data access layer code used across lambdas
+      ContentUri: src/lambda-layers/dal-layer/
+      CompatibleRuntimes:
+        - nodejs8.10
+      RetentionPolicy: Delete
+  # create new player lambda function configs
+  CreatePlayerLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/lambdas/create-player-lambda/
+      Policies:
+        - S3CrudPolicy:
+            BucketName: pga.players.db.bucket
+      Layers:
+        - !Ref CommonCodeLambdaLayer
+        - !Ref AWSUtilsLambdaLayer
+        - !Ref DALLambdaLayer
+      Events:
+        CreatePlayer:
+          Type: Api
+          Properties:
+            Path: /players
+            Method: post
+  # list all players lambda function configs
+  ListAllPlayersLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/lambdas/list-allplayers-lambda/
+      Policies:
+        - S3CrudPolicy:
+            BucketName: pga.players.db.bucket
+      Layers:
+        - !Ref CommonCodeLambdaLayer
+        - !Ref AWSUtilsLambdaLayer
+        - !Ref DALLambdaLayer
+      Events:
+        ListAllPlayers:
+          Type: Api
+          Properties:
+            Path: /players
+            Method: get
+  # get the player by id
+  GetPlayerLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/lambdas/get-player-lambda/
+      Policies:
+        - S3CrudPolicy:
+            BucketName: pga.players.db.bucket
+      Layers:
+        - !Ref CommonCodeLambdaLayer
+        - !Ref AWSUtilsLambdaLayer
+        - !Ref DALLambdaLayer
+      Events:
+        GetThePlayer:
+          Type: Api
+          Properties:
+            Path: /players/{player_id}
+            Method: get
+  # delete the player by id
+  DeletePlayerLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/lambdas/delete-player-lambda/
+      Policies:
+        - S3CrudPolicy:
+            BucketName: pga.players.db.bucket
+      Layers:
+        - !Ref CommonCodeLambdaLayer
+        - !Ref AWSUtilsLambdaLayer
+        - !Ref DALLambdaLayer
+      Events:
+        DeleteThePlayer:
+          Type: Api
+          Properties:
+            Path: /players/{player_id}
+            Method: delete
+  # update the player by id
+  UpdatePlayerLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/lambdas/update-player-lambda/
+      Policies:
+        - S3CrudPolicy:
+            BucketName: pga.players.db.bucket
+      Layers:
+        - !Ref CommonCodeLambdaLayer
+        - !Ref AWSUtilsLambdaLayer
+        - !Ref DALLambdaLayer
+      Events:
+        UpdateThePlayer:
+          Type: Api
+          Properties:
+            Path: /players/{player_id}
+            Method: put

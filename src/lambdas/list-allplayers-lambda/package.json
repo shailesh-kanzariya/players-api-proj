@@ -1,0 +1,11 @@
+{
+  "name": "list-players-lambda",
+  "version": "1.0.0",
+  "description": "list players",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shailesh",
+  "license": "ISC"
+}

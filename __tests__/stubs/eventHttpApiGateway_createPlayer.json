@@ -1,0 +1,121 @@
+{
+  "resource": "/players",
+  "path": "/players",
+  "httpMethod": "POST",
+  "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate",
+      "Cache-Control": "no-cache",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "IN",
+      "Content-Type": "application/json",
+      "Host": "cbxo4dfp7h.execute-api.us-east-2.amazonaws.com",
+      "Postman-Token": "bc2de714-7442-4d8e-8628-78fd4877c6e4",
+      "User-Agent": "PostmanRuntime/7.15.2",
+      "Via": "1.1 62f7aa308c367fb8f14fc57f199056cc.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "vJ49oRqlV8wJm0cxmL2ZCCQrTVZcmjOcMiLMUtAcGo7A8_XWF0p-Gw==",
+      "X-Amzn-Trace-Id": "Root=1-5d7b36ac-935a6a783b9558a1fdfc897c",
+      "X-Forwarded-For": "122.169.26.255, 64.252.145.132",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+      "Accept": [
+          "*/*"
+      ],
+      "Accept-Encoding": [
+          "gzip, deflate"
+      ],
+      "Cache-Control": [
+          "no-cache"
+      ],
+      "CloudFront-Forwarded-Proto": [
+          "https"
+      ],
+      "CloudFront-Is-Desktop-Viewer": [
+          "true"
+      ],
+      "CloudFront-Is-Mobile-Viewer": [
+          "false"
+      ],
+      "CloudFront-Is-SmartTV-Viewer": [
+          "false"
+      ],
+      "CloudFront-Is-Tablet-Viewer": [
+          "false"
+      ],
+      "CloudFront-Viewer-Country": [
+          "IN"
+      ],
+      "Content-Type": [
+          "application/json"
+      ],
+      "Host": [
+          "cbxo4dfp7h.execute-api.us-east-2.amazonaws.com"
+      ],
+      "Postman-Token": [
+          "bc2de714-7442-4d8e-8628-78fd4877c6e4"
+      ],
+      "User-Agent": [
+          "PostmanRuntime/7.15.2"
+      ],
+      "Via": [
+          "1.1 62f7aa308c367fb8f14fc57f199056cc.cloudfront.net (CloudFront)"
+      ],
+      "X-Amz-Cf-Id": [
+          "vJ49oRqlV8wJm0cxmL2ZCCQrTVZcmjOcMiLMUtAcGo7A8_XWF0p-Gw=="
+      ],
+      "X-Amzn-Trace-Id": [
+          "Root=1-5d7b36ac-935a6a783b9558a1fdfc897c"
+      ],
+      "X-Forwarded-For": [
+          "122.169.26.255, 64.252.145.132"
+      ],
+      "X-Forwarded-Port": [
+          "443"
+      ],
+      "X-Forwarded-Proto": [
+          "https"
+      ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+      "resourceId": "0bvmha",
+      "resourcePath": "/players",
+      "httpMethod": "POST",
+      "extendedRequestId": "f8V7BF5HCYcFXzw=",
+      "requestTime": "13/Sep/2019:06:26:52 +0000",
+      "path": "/Prod/players",
+      "accountId": "184240291317",
+      "protocol": "HTTP/1.1",
+      "stage": "Prod",
+      "domainPrefix": "cbxo4dfp7h",
+      "requestTimeEpoch": 1568356012907,
+      "requestId": "e337b9da-9bd5-41da-990b-f54fbd9cd1eb",
+      "identity": {
+          "cognitoIdentityPoolId": null,
+          "accountId": null,
+          "cognitoIdentityId": null,
+          "caller": null,
+          "sourceIp": "122.169.26.255",
+          "principalOrgId": null,
+          "accessKey": null,
+          "cognitoAuthenticationType": null,
+          "cognitoAuthenticationProvider": null,
+          "userArn": null,
+          "userAgent": "PostmanRuntime/7.15.2",
+          "user": null
+      },
+      "domainName": "cbxo4dfp7h.execute-api.us-east-2.amazonaws.com",
+      "apiId": "cbxo4dfp7h"
+  },
+  "body": "{\n    \"id\": \"5c755ff9af458fde27863223\",\n    \"isActive\": true,\n    \"points\": 52,\n    \"name\": \"Oneal Sims\",\n    \"team\": \"yellow\"\n  }",
+  "isBase64Encoded": false
+}

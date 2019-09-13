@@ -39,3 +39,8 @@ For that purpose create a REST API with the following endpoints:
  * Clone (_not fork_) this repo
  * Implement a working solution
  * Submit the links to your PGA contact
+## Serverless Functions - Packaging and Deployment
+  * Serverless Functions - Packaging Command
+    * `sam package --output-template-file packaged.yaml --s3-bucket pga.codetest.sls.package.bucket`
+  * Serverless Functions - Deploy Command
+    * `sam deploy --template-file packaged.yaml --stack-name pga-codetest-sls-stack --capabilities CAPABILITY_IAM  --region us-east-2`

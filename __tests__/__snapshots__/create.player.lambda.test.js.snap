@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Player Tests..... Creating plaer that already exist, should return a status code 400 with 'API_ERR_ITEM_ALREADY_EXIST' error code 1`] = `
+Object {
+  "body": "{\\"error\\":{\\"errorStatus\\":\\"Bad Request\\",\\"errorCode\\":\\"API_ERR_ITEM_ALREADY_EXIST\\",\\"errorMessage\\":\\"Item already exist\\"}}",
+  "headers": Object {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+  },
+  "statusCode": 400,
+}
+`;
+
+exports[`Create Player Tests..... Request body missing 'id' param, should return a status code 400 with 'API_ERR_INVALID_REQUEST_BODY' error code 1`] = `
+Object {
+  "body": "{\\"error\\":{\\"errorStatus\\":\\"Bad Request\\",\\"errorCode\\":\\"API_ERR_INVALID_REQUEST_BODY\\",\\"errorMessage\\":\\"Request body either missing or invalid\\"}}",
+  "headers": Object {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+  },
+  "statusCode": 400,
+}
+`;
+
+exports[`Create Player Tests..... Request body missing 'isActive' param, should return a status code 400 with 'API_ERR_INVALID_REQUEST_BODY' error code 1`] = `
+Object {
+  "body": "{\\"error\\":{\\"errorStatus\\":\\"Bad Request\\",\\"errorCode\\":\\"API_ERR_INVALID_REQUEST_BODY\\",\\"errorMessage\\":\\"Request body either missing or invalid\\"}}",
+  "headers": Object {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+  },
+  "statusCode": 400,
+}
+`;
+
+exports[`Create Player Tests..... Request body missing 'name' param, should return a status code 400 with 'API_ERR_INVALID_REQUEST_BODY' error code 1`] = `
+Object {
+  "body": "{\\"error\\":{\\"errorStatus\\":\\"Bad Request\\",\\"errorCode\\":\\"API_ERR_INVALID_REQUEST_BODY\\",\\"errorMessage\\":\\"Request body either missing or invalid\\"}}",
+  "headers": Object {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+  },
+  "statusCode": 400,
+}
+`;
+
+exports[`Create Player Tests..... Request body missing 'points' param,, should return a status code 400 with 'API_ERR_INVALID_REQUEST_BODY' error code 1`] = `
+Object {
+  "body": "{\\"error\\":{\\"errorStatus\\":\\"Bad Request\\",\\"errorCode\\":\\"API_ERR_INVALID_REQUEST_BODY\\",\\"errorMessage\\":\\"Request body either missing or invalid\\"}}",
+  "headers": Object {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+  },
+  "statusCode": 400,
+}
+`;
+
+exports[`Create Player Tests..... Request body missing 'team' param, should return a status code 400 with 'API_ERR_INVALID_REQUEST_BODY' error code 1`] = `
+Object {
+  "body": "{\\"error\\":{\\"errorStatus\\":\\"Bad Request\\",\\"errorCode\\":\\"API_ERR_INVALID_REQUEST_BODY\\",\\"errorMessage\\":\\"Request body either missing or invalid\\"}}",
+  "headers": Object {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+  },
+  "statusCode": 400,
+}
+`;
+
+exports[`Create Player Tests..... Request body missing all params, should return a status code 400 with 'API_ERR_INVALID_REQUEST_BODY' error code 1`] = `
+Object {
+  "body": "{\\"error\\":{\\"errorStatus\\":\\"Bad Request\\",\\"errorCode\\":\\"API_ERR_INVALID_REQUEST_BODY\\",\\"errorMessage\\":\\"Request body either missing or invalid\\"}}",
+  "headers": Object {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+  },
+  "statusCode": 400,
+}
+`;
+
+exports[`Create Player Tests..... Sending request body null, should return a status code 400 with 'API_ERR_INVALID_REQUEST_BODY' error code 1`] = `
+Object {
+  "body": "{\\"error\\":{\\"errorStatus\\":\\"Bad Request\\",\\"errorCode\\":\\"API_ERR_INVALID_REQUEST_BODY\\",\\"errorMessage\\":\\"Request body either missing or invalid\\"}}",
+  "headers": Object {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+  },
+  "statusCode": 400,
+}
+`;

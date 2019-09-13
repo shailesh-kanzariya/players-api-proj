@@ -1,0 +1,14 @@
+{
+  "name": "aws-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aws-s3-util.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shailesh Kanzariya",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.526.0"
+  }
+}
