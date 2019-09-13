@@ -6,7 +6,7 @@ let successCodesJSON = null
 let player = null
 let validationUtil = null
 const myEnv = process.env.NODE_ENV
-if (process.env.NODE_ENV === myEnv) {
+if (process.env.NODE_ENV && process.env.NODE_ENV === myEnv) {
   CError = require('./../../lambda-layers/common-layer/nodejs/CError').CError
   errorCodesJSON = require('./../../lambda-layers/common-layer/nodejs/error-codes').errorCodesJSON
   successCodesJSON = require('./../../lambda-layers/common-layer/nodejs/success-codes').successCodesJSON

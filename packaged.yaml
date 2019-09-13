@@ -12,7 +12,7 @@ Resources:
     Properties:
       CompatibleRuntimes:
       - nodejs8.10
-      ContentUri: s3://pga.codetest.sls.package.bucket/c560977712cac824064462918a581bb0
+      ContentUri: s3://pga.codetest.sls.package.bucket/448630d0ba3a80852b20200900e23cde
       Description: Contains aws utils code used across lambdas
       LayerName: AWSUtilsLayer
       RetentionPolicy: Delete
@@ -21,14 +21,14 @@ Resources:
     Properties:
       CompatibleRuntimes:
       - nodejs8.10
-      ContentUri: s3://pga.codetest.sls.package.bucket/d91fb554304e2fca7700cb25b346562a
+      ContentUri: s3://pga.codetest.sls.package.bucket/3922ddb5948105730aa0a2b17360cb8e
       Description: Contains common code used across lambdas
       LayerName: CommonCodeLayer
       RetentionPolicy: Delete
     Type: AWS::Serverless::LayerVersion
   CreatePlayerLambdaFunction:
     Properties:
-      CodeUri: s3://pga.codetest.sls.package.bucket/fec4cdcd9a0e55f0a4f4ee4c2c78e1f8
+      CodeUri: s3://pga.codetest.sls.package.bucket/d35e58c342ebfef99d2c6f87918745fd
       Events:
         CreatePlayer:
           Properties:
@@ -47,14 +47,14 @@ Resources:
     Properties:
       CompatibleRuntimes:
       - nodejs8.10
-      ContentUri: s3://pga.codetest.sls.package.bucket/435deb376bdb4d1d1845f2d8ed7906ab
+      ContentUri: s3://pga.codetest.sls.package.bucket/82c8f87a4b75a954308fc4e2661e4fe8
       Description: Contains data access layer code used across lambdas
       LayerName: DALLambdaLayer
       RetentionPolicy: Delete
     Type: AWS::Serverless::LayerVersion
   DeletePlayerLambdaFunction:
     Properties:
-      CodeUri: s3://pga.codetest.sls.package.bucket/9b7a9d469af83f1232416b1a028f8019
+      CodeUri: s3://pga.codetest.sls.package.bucket/567a6790e673e35cffa8adc09135a080
       Events:
         DeleteThePlayer:
           Properties:
@@ -71,7 +71,7 @@ Resources:
     Type: AWS::Serverless::Function
   GetPlayerLambdaFunction:
     Properties:
-      CodeUri: s3://pga.codetest.sls.package.bucket/3c8da01e158253d57adc3712031b11fc
+      CodeUri: s3://pga.codetest.sls.package.bucket/f9b21ae3f64821b675699f1035be3a0d
       Events:
         GetThePlayer:
           Properties:
@@ -88,7 +88,7 @@ Resources:
     Type: AWS::Serverless::Function
   ListAllPlayersLambdaFunction:
     Properties:
-      CodeUri: s3://pga.codetest.sls.package.bucket/032f2985ee24953575ec8aff7c4c3e79
+      CodeUri: s3://pga.codetest.sls.package.bucket/abbac29a1a9f3438e074905d4d1ce47a
       Events:
         ListAllPlayers:
           Properties:
@@ -105,7 +105,7 @@ Resources:
     Type: AWS::Serverless::Function
   UpdatePlayerLambdaFunction:
     Properties:
-      CodeUri: s3://pga.codetest.sls.package.bucket/70b54789fd3a0cabce2e1e0b43b98649
+      CodeUri: s3://pga.codetest.sls.package.bucket/131b647e875fb2353b045564df11898e
       Events:
         UpdateThePlayer:
           Properties:

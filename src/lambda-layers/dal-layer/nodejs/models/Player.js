@@ -5,7 +5,7 @@ let configsJSON = null
 let CError = null
 let errorCodesJSON = null
 const myEnv = process.env.NODE_ENV
-if (process.env.NODE_ENV === myEnv) {
+if (process.env.NODE_ENV && process.env.NODE_ENV === myEnv) {
   AWSS3Util = require('./../../../aws-utils-layer/nodejs/AWSS3Util').AWSS3Util
   configsJSON = require('./../../../common-layer/nodejs/configs').configsJSON
   validationUtil = require('./../../../common-layer/nodejs/validation-util')

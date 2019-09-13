@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "ea8d6e6d-3c1f-4357-8711-59f4b7709398",
+		"name": "PGA-Code-Test-APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"5c755ff95562fa53027ca86d\",\n    \"isActive\": true,\n    \"points\": 58,\n    \"name\": \"Helena Peters\",\n    \"team\": \"green\"\n }"
+				},
+				"url": {
+					"raw": "https://cbxo4dfp7h.execute-api.us-east-2.amazonaws.com/Prod/players",
+					"protocol": "https",
+					"host": [
+						"cbxo4dfp7h",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Players",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cbxo4dfp7h.execute-api.us-east-2.amazonaws.com/Prod/players",
+					"protocol": "https",
+					"host": [
+						"cbxo4dfp7h",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Player",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cbxo4dfp7h.execute-api.us-east-2.amazonaws.com/Prod/players/5c755ff916257a510268b41a",
+					"protocol": "https",
+					"host": [
+						"cbxo4dfp7h",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"players",
+						"5c755ff916257a510268b41a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Player",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cbxo4dfp7h.execute-api.us-east-2.amazonaws.com/Prod/players/5c755ff9af458fde27863223",
+					"protocol": "https",
+					"host": [
+						"cbxo4dfp7h",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"players",
+						"5c755ff9af458fde27863223"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Player",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"5c755ff916257a510268b41a\",\n    \"name\": \"Santiago Gross\",\n    \"team\": \"blue\",\n    \"points\": 75,\n    \"isActive\": false\n}"
+				},
+				"url": {
+					"raw": "https://cbxo4dfp7h.execute-api.us-east-2.amazonaws.com/Prod/players/5c755ff916257a510268b41a",
+					"protocol": "https",
+					"host": [
+						"cbxo4dfp7h",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"players",
+						"5c755ff916257a510268b41a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -21,7 +21,7 @@ describe('Execute Create Player Unit Tests.....', () => {
   })
   */
   // All Test Cases - Start
-  test('Creating plaer that already exist, should return a status code 400 with \'API_ERR_ITEM_ALREADY_EXIST\' error code', async () => {
+  test('Creating player that already exist, should return a status code 400 with \'API_ERR_ITEM_ALREADY_EXIST\' error code', async () => {
     const event = eventStub
     const result = await lambdaHandler(event)
     const resultBodyJSON = JSON.parse(result.body)

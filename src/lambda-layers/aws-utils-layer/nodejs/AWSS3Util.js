@@ -5,7 +5,7 @@ const fs = require('fs')
 let awsUtilsConfigs = null
 let validationUtil = null
 const myEnv = process.env.NODE_ENV
-if (process.env.NODE_ENV === myEnv) {
+if (process.env.NODE_ENV && process.env.NODE_ENV === myEnv) {
   awsUtilsConfigs = require('./aws-utils-configs').awsUtilsConfigs
   validationUtil = require('./../../common-layer/nodejs/validation-util')
 } else {
