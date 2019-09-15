@@ -11,6 +11,7 @@ console.log(`validTeamValueList.length = ${validTeamValueList.length}`)
 describe('Execute Create Player Unit Tests.....', () => {
   beforeEach(() => {
     eventStub = JSON.parse(JSON.stringify(originalEventStub))
+    jest.setTimeout(5000)
   })
   /*
   beforeAll(() => {
@@ -23,9 +24,11 @@ describe('Execute Create Player Unit Tests.....', () => {
   // All Test Cases - Start
   test('Creating player that already exist, should return a status code 400 with \'API_ERR_ITEM_ALREADY_EXIST\' error code', async () => {
     const event = eventStub
+    console.log(`create existing player, event = ${JSON.stringify(event)}`)
     const result = await lambdaHandler(event)
     const resultBodyJSON = JSON.parse(result.body)
-    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_ITEM_ALREADY_EXIST')
+    expect(result.statusCode).toBe(400) // 'statusCode' should be 400
+    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_ITEM_ALREADY_EXIST') // should match 'errorCode'
     expect(result).toMatchSnapshot()
   }) // test
   test('Sending request body null, should return a status code 400 with \'API_ERR_INVALID_REQUEST_BODY\' error code', async () => {
@@ -35,7 +38,8 @@ describe('Execute Create Player Unit Tests.....', () => {
     console.log(`result = ${JSON.stringify(result)}`)
     const resultBodyJSON = JSON.parse(result.body)
     console.log(`resultBodyJSON = ${JSON.stringify(resultBodyJSON)}`)
-    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY')
+    expect(result.statusCode).toBe(400) // 'statusCode' should be 400
+    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY') // should match 'errorCode'
     expect(result).toMatchSnapshot()
   }) // test
   // request body missing 'name'
@@ -49,7 +53,8 @@ describe('Execute Create Player Unit Tests.....', () => {
     const event = eventStub
     const result = await lambdaHandler(event)
     const resultBodyJSON = JSON.parse(result.body)
-    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY')
+    expect(result.statusCode).toBe(400) // 'statusCode' should be 400
+    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY') // should match 'errorCode'
     expect(result).toMatchSnapshot()
   }) // test
   // request body missing 'team'
@@ -63,7 +68,8 @@ describe('Execute Create Player Unit Tests.....', () => {
     const event = eventStub
     const result = await lambdaHandler(event)
     const resultBodyJSON = JSON.parse(result.body)
-    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY')
+    expect(result.statusCode).toBe(400) // 'statusCode' should be 400
+    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY') // should match 'errorCode'
     expect(result).toMatchSnapshot()
   }) // test
   // request body missing 'isActive'
@@ -77,7 +83,8 @@ describe('Execute Create Player Unit Tests.....', () => {
     const event = eventStub
     const result = await lambdaHandler(event)
     const resultBodyJSON = JSON.parse(result.body)
-    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY')
+    expect(result.statusCode).toBe(400) // 'statusCode' should be 400
+    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY') // should match 'errorCode'
     expect(result).toMatchSnapshot()
   }) // test
   // request body missing 'points'
@@ -91,7 +98,8 @@ describe('Execute Create Player Unit Tests.....', () => {
     const event = eventStub
     const result = await lambdaHandler(event)
     const resultBodyJSON = JSON.parse(result.body)
-    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY')
+    expect(result.statusCode).toBe(400) // 'statusCode' should be 400
+    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY') // should match 'errorCode'
     expect(result).toMatchSnapshot()
   }) // test
   // request body missing 'id'
@@ -105,7 +113,8 @@ describe('Execute Create Player Unit Tests.....', () => {
     const event = eventStub
     const result = await lambdaHandler(event)
     const resultBodyJSON = JSON.parse(result.body)
-    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY')
+    expect(result.statusCode).toBe(400) // 'statusCode' should be 400
+    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY') // should match 'errorCode'
     expect(result).toMatchSnapshot()
   }) // test
   // request body empty json {}
@@ -115,7 +124,8 @@ describe('Execute Create Player Unit Tests.....', () => {
     const event = eventStub
     const result = await lambdaHandler(event)
     const resultBodyJSON = JSON.parse(result.body)
-    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY')
+    expect(result.statusCode).toBe(400) // 'statusCode' should be 400
+    expect(resultBodyJSON.error.errorCode).toBe('API_ERR_INVALID_REQUEST_BODY') // should match 'errorCode'
     expect(result).toMatchSnapshot()
   }) // test
   // success
@@ -132,11 +142,11 @@ describe('Execute Create Player Unit Tests.....', () => {
     if (randomBool >= 1) {
       randomIsActive = true
     }
-    const p = new Player(randomId, randomName, randomTeam, randomPoints, randomIsActive)
-    console.log(`p = ${JSON.stringify(p)}`)
+    const newPlayerToCreate = new Player(randomId, randomName, randomTeam, randomPoints, randomIsActive)
+    console.log(`newPlayerToCreate = ${JSON.stringify(newPlayerToCreate)}`)
     // add that player to event body
-    eventStub.body = JSON.stringify(p)
-    console.log(`peventStub = ${JSON.stringify(eventStub)}`)
+    eventStub.body = JSON.stringify(newPlayerToCreate)
+    console.log(`eventStub = ${JSON.stringify(eventStub)}`)
     const event = eventStub
     // create new player
     const result = await lambdaHandler(event)
@@ -147,8 +157,9 @@ describe('Execute Create Player Unit Tests.....', () => {
     console.log(`playerCreated = ${JSON.stringify(playerCreated)}`)
     const status = resultBodyJSON.status
     console.log(`status = ${status}`)
-    expect(status).toBe('Created')
-    expect(resultBodyJSON.data[0]).toBe(playerCreated)
+    expect(result.statusCode).toBe(201) // 'statusCode' should be 201
+    expect(resultBodyJSON.status).toBe('Created') // 'status' should be 'Created'
+    expect(resultBodyJSON.data[0]).toEqual(newPlayerToCreate) // should match with player JSON sent into request body
   }) // test
   // All Test Cases - End
 }) // describe

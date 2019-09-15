@@ -8,7 +8,9 @@
     "test": "npx jest"
   },
   "jest": {
-    "testEnvironment": "node"
+    "verbose": true,
+    "testEnvironment": "node",
+    "timers": "fake"
   },
   "standard": {
     "env": [

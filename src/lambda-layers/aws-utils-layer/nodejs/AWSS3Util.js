@@ -45,7 +45,8 @@ class AWSS3Util extends Object {
         Bucket: curBucket,
         Key: s3ObjectKey
       } // params
-      const s3 = new AWS.S3({ apiVersion: awsUtilsConfigs.s3APIVersion })
+      console.log(`${funcName} params = ${JSON.stringify(params)}`)
+      const s3 = new AWS.S3({ apiVersion: awsUtilsConfigs.s3APIVersion, region: awsUtilsConfigs.s3Region })
       const data = await s3.getObject(params).promise()
       if (data === null) {
         console.log(`${funcName}failed to get object from bucket, data = ${data}`)
@@ -75,7 +76,6 @@ class AWSS3Util extends Object {
         throw (new Error(`${funcName}failed to get object from bucket, data = ${dataBodyBuffer}`))
       }
       const dataString = dataBodyBuffer.toString('utf8')
-      console.log(`${funcName}dataString = ${dataString}`)
       // parse dataString to JSON
       const objectJSON = JSON.parse(dataString)
       console.log(`${funcName}objectJSON = ${JSON.stringify(objectJSON)}`)
@@ -113,7 +113,7 @@ class AWSS3Util extends Object {
         Bucket: curBucket,
         Key: s3ObjectKey
       } // params
-      const s3 = new AWS.S3({ apiVersion: awsUtilsConfigs.s3APIVersion })
+      const s3 = new AWS.S3({ apiVersion: awsUtilsConfigs.s3APIVersion, region: awsUtilsConfigs.s3Region })
       // const data = await s3.upload(params).promise();
       const data = await s3.putObject(params).promise()
       if (data === null) {
@@ -138,7 +138,7 @@ class AWSS3Util extends Object {
       } else {
         await validationUtil.validateStringTypeParamList([s3ObjectKey])
       }
-      await validationUtil.validateJSONTypeParamList([dataJSON])
+      // await validationUtil.validateJSONTypeParamList([dataJSON])
       let curBucket = null
       // if bucketName is provided then use it else use this.currentBucket
       if (bucketName) {
@@ -155,8 +155,8 @@ class AWSS3Util extends Object {
         Bucket: curBucket,
         Key: s3ObjectKey
       } // params
-      const s3 = new AWS.S3({ apiVersion: awsUtilsConfigs.s3APIVersion })
-      // const data = await s3.upload(params).promise();
+      const s3 = new AWS.S3({ apiVersion: awsUtilsConfigs.s3APIVersion, region: awsUtilsConfigs.s3Region })
+      // const data = await s3.upload(params).promise()
       const data = await s3.putObject(params).promise()
       if (data === null) {
         console.log(`${funcName}failed to put object in bucket, data = ${data}`)
