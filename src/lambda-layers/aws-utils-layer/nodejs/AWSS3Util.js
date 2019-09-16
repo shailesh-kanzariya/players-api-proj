@@ -1,11 +1,15 @@
 /* eslint-disable import/no-absolute-path */
+console.log(`process.env.NODE_ENV = ${process.env.NODE_ENV}`)
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+}
 const AWS = require('aws-sdk')
 const fs = require('fs')
 
 let awsUtilsConfigs = null
 let validationUtil = null
-const myEnv = process.env.NODE_ENV
-if (process.env.NODE_ENV && process.env.NODE_ENV === myEnv) {
+console.log(`process.env.RUN_ENV = ${process.env.RUN_ENV}`)
+if (process.env.RUN_ENV === 'local') {
   awsUtilsConfigs = require('./aws-utils-configs').awsUtilsConfigs
   validationUtil = require('./../../common-layer/nodejs/validation-util')
 } else {

@@ -49,7 +49,7 @@ exports.lambdaHandler = async (event) => {
     const eventBodyJSON = JSON.parse(event.body)
     let p = null
     try {
-      p = await player.updatePlayerById(eventBodyJSON.id, eventBodyJSON.name, eventBodyJSON.team, eventBodyJSON.points, eventBodyJSON.isActive)
+      p = await player.updatePlayerById(playerId, eventBodyJSON.name, eventBodyJSON.team, eventBodyJSON.points, eventBodyJSON.isActive)
     } catch (error) { // manage update case specific error
       console.log(`${funcName}error = ${error}`)
       const apiRes = await apiResponseUtil.getAPIErrorResponse(error)

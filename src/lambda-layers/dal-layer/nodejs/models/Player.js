@@ -1,11 +1,15 @@
 /* eslint-disable import/no-absolute-path */
+console.log(`process.env.NODE_ENV = ${process.env.NODE_ENV}`)
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+}
 let validationUtil = null
 let AWSS3Util = null
 let configsJSON = null
 let CError = null
 let errorCodesJSON = null
-const myEnv = process.env.NODE_ENV
-if (process.env.NODE_ENV && process.env.NODE_ENV === myEnv) {
+console.log(`process.env.RUN_ENV = ${process.env.RUN_ENV}`)
+if (process.env.RUN_ENV === 'local') {
   AWSS3Util = require('./../../../aws-utils-layer/nodejs/AWSS3Util').AWSS3Util
   configsJSON = require('./../../../common-layer/nodejs/configs').configsJSON
   validationUtil = require('./../../../common-layer/nodejs/validation-util')
@@ -239,7 +243,10 @@ async function updatePlayerById (pId, pName, pTeam, pPoints, pIsActive) {
     if (playerUpdated) { // if player matched and deleted then update db on s3
       await awsS3Util.putJSONInBucket(playerList, s3BucketObjectKey)
     }
-    return updatedPlayer
+    if (playerUpdated) { // if update success then return updated player
+      return updatedPlayer
+    }
+    return playerUpdated
   } catch (error) {
     console.log(`${funcName}error = ${error}`)
     throw (error)
