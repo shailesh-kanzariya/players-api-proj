@@ -8,9 +8,9 @@ Globals:
     Timeout: 3 # seconds
     Runtime: nodejs8.10
     Handler: app.lambdaHandler # app.js
-    Environment:
-      Variables:
-        NODE_ENV: production
+    # Environment:
+    #   Variables:
+    #     NODE_ENV: production
 
 Resources:
   # aws utils lambda layer

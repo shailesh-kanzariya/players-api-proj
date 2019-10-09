@@ -1,8 +1,4 @@
-/* eslint-disable import/no-absolute-path */
-console.log(`process.env.NODE_ENV = ${process.env.NODE_ENV}`)
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config()
-}
+require('dotenv').config()
 let validationUtil = null
 let AWSS3Util = null
 let configsJSON = null
@@ -10,17 +6,11 @@ let CError = null
 let errorCodesJSON = null
 console.log(`process.env.RUN_ENV = ${process.env.RUN_ENV}`)
 if (process.env.RUN_ENV === 'local') {
-  AWSS3Util = require('./../../../aws-utils-layer/nodejs/AWSS3Util').AWSS3Util
-  configsJSON = require('./../../../common-layer/nodejs/configs').configsJSON
-  validationUtil = require('./../../../common-layer/nodejs/validation-util')
-  CError = require('./../../../common-layer/nodejs/CError').CError
-  errorCodesJSON = require('./../../../common-layer/nodejs/error-codes').errorCodesJSON
+  ({ CError, configsJSON, validationUtil, errorCodesJSON } = require('../../../common-layer/nodejs/common-layer-index'));
+  ({ AWSS3Util } = require('../../../aws-utils-layer/nodejs/aws-utils-layer-index'))
 } else {
-  validationUtil = require('/opt/nodejs/validation-util')
-  AWSS3Util = require('/opt/nodejs/AWSS3Util').AWSS3Util
-  configsJSON = require('/opt/nodejs/configs').configsJSON
-  CError = require('/opt/nodejs/CError').CError
-  errorCodesJSON = require('/opt/nodejs/error-codes').errorCodesJSON
+  ({ CError, configsJSON, validationUtil, errorCodesJSON } = require('/opt/nodejs/common-layer-index'));
+  ({ AWSS3Util } = require('/opt/nodejs/aws-utils-layer-index'))
 }
 // valid values for team
 const validTeamValueList = ['red', 'blue', 'green', 'yellow']

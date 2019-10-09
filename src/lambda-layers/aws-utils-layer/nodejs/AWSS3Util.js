@@ -1,8 +1,4 @@
-/* eslint-disable import/no-absolute-path */
-console.log(`process.env.NODE_ENV = ${process.env.NODE_ENV}`)
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config()
-}
+require('dotenv').config()
 const AWS = require('aws-sdk')
 const fs = require('fs')
 
@@ -10,13 +6,13 @@ let awsUtilsConfigs = null
 let validationUtil = null
 console.log(`process.env.RUN_ENV = ${process.env.RUN_ENV}`)
 if (process.env.RUN_ENV === 'local') {
-  awsUtilsConfigs = require('./aws-utils-configs').awsUtilsConfigs
-  validationUtil = require('./../../common-layer/nodejs/validation-util')
+  ({ awsUtilsConfigs } = require('./aws-utils-configs'));
+  ({ validationUtil } = require('../../common-layer/nodejs/common-layer-index'))
 } else {
-  awsUtilsConfigs = require('/opt/nodejs/aws-utils-configs')
-  validationUtil = require('/opt/nodejs/validation-util')
+  ({ validationUtil } = require('/opt/nodejs/common-layer-index'));
+  ({ awsUtilsConfigs } = require('./aws-utils-configs'))
 }
-
+console.log(`awsUtilsConfigs = ${JSON.stringify(awsUtilsConfigs)}`)
 class AWSS3Util extends Object {
   constructor (bucketName = null) {
     super()

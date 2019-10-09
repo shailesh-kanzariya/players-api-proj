@@ -1,8 +1,4 @@
-/* eslint-disable import/no-absolute-path */
-console.log(`process.env.NODE_ENV = ${process.env.NODE_ENV}`)
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config()
-}
+require('dotenv').config()
 let CError = null
 let errorCodesJSON = null
 let apiResponseUtil = null
@@ -11,19 +7,11 @@ let player = null
 let validationUtil = null
 console.log(`process.env.RUN_ENV = ${process.env.RUN_ENV}`)
 if (process.env.RUN_ENV === 'local') {
-  CError = require('./../../lambda-layers/common-layer/nodejs/CError').CError
-  errorCodesJSON = require('./../../lambda-layers/common-layer/nodejs/error-codes').errorCodesJSON
-  successCodesJSON = require('./../../lambda-layers/common-layer/nodejs/success-codes').successCodesJSON
-  apiResponseUtil = require('./../../lambda-layers/common-layer/nodejs/api-response-util')
+  ({ CError, validationUtil, errorCodesJSON, apiResponseUtil, successCodesJSON } = require('./../../lambda-layers/common-layer/nodejs/common-layer-index'))
   player = require('./../../lambda-layers/dal-layer/nodejs/models/Player')
-  validationUtil = require('./../../lambda-layers/common-layer/nodejs/validation-util')
 } else {
-  CError = require('/opt/nodejs/CError').CError
-  errorCodesJSON = require('/opt/nodejs/error-codes').errorCodesJSON
-  successCodesJSON = require('/opt/nodejs/success-codes').successCodesJSON
-  apiResponseUtil = require('/opt/nodejs/api-response-util')
+  ({ CError, validationUtil, errorCodesJSON, apiResponseUtil, successCodesJSON } = require('/opt/nodejs/common-layer-index'))
   player = require('/opt/nodejs/models/Player')
-  validationUtil = require('/opt/nodejs/validation-util')
 }
 // required request params
 const requiredRequestParamList = ['name', 'team', 'points', 'isActive', 'id']

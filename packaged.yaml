@@ -4,9 +4,6 @@ Description: 'PGA Code Test
   '
 Globals:
   Function:
-    Environment:
-      Variables:
-        NODE_ENV: production
     Handler: app.lambdaHandler
     Runtime: nodejs8.10
     Timeout: 3
@@ -15,7 +12,7 @@ Resources:
     Properties:
       CompatibleRuntimes:
       - nodejs8.10
-      ContentUri: s3://pga.codetest.sls.package.bucket/eb897af35fc9290d453149f81a9d49b2
+      ContentUri: s3://pga.codetest.sls.package.bucket/61f09fc4c0c6132f4a5637824782c907
       Description: Contains aws utils code used across lambdas
       LayerName: AWSUtilsLayer
       RetentionPolicy: Delete
@@ -24,14 +21,14 @@ Resources:
     Properties:
       CompatibleRuntimes:
       - nodejs8.10
-      ContentUri: s3://pga.codetest.sls.package.bucket/3922ddb5948105730aa0a2b17360cb8e
+      ContentUri: s3://pga.codetest.sls.package.bucket/3bc1030c9318c941789eae528ae308b2
       Description: Contains common code used across lambdas
       LayerName: CommonCodeLayer
       RetentionPolicy: Delete
     Type: AWS::Serverless::LayerVersion
   CreatePlayerLambdaFunction:
     Properties:
-      CodeUri: s3://pga.codetest.sls.package.bucket/2d9b2e212078a883e0640369dc05c30a
+      CodeUri: s3://pga.codetest.sls.package.bucket/b60c9384aca2ed90a8ac9f1451188bb2
       Events:
         CreatePlayer:
           Properties:
@@ -50,7 +47,7 @@ Resources:
     Properties:
       CompatibleRuntimes:
       - nodejs8.10
-      ContentUri: s3://pga.codetest.sls.package.bucket/653d779dc7467f073fe12389fe6e2a3f
+      ContentUri: s3://pga.codetest.sls.package.bucket/5386802fd06a91b2fbaf642552e7e53e
       Description: Contains data access layer code used across lambdas
       LayerName: DALLambdaLayer
       RetentionPolicy: Delete
